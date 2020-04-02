@@ -1,0 +1,123 @@
+.MainSNav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 1px solid #eee;
+  padding: 15px 5px 0px 5px;
+}
+
+.MainSNav .forumInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+}
+
+.MainSNav .forumInfo > h1 {
+  font-weight: 500;
+}
+
+.MainSNav .forumInfo .logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.MainSNav ul {
+  list-style: none;
+  margin: 0;
+}
+
+.MainSNav ul li {
+  padding: 20px;
+  color: #939393;
+  cursor: pointer;
+}
+
+.MainSNav ul .acitve {
+  color: #6AB3DB;
+  border-bottom: 2px solid #6AB3DB;
+}
+
+.MainNav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0px 0px 0px;
+}
+
+.MainNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  position: relative;
+  right: 50px;
+}
+
+.MainNav ul li {
+  padding: 20px 15px;
+  margin: 0 10px;
+  color: #939393;
+  cursor: pointer;
+}
+
+.MainNav ul .acitve {
+  color: #6AB3DB;
+  border-bottom: 2px solid #6AB3DB;
+}
+
+.MainNav .filterContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: 1px solid #ccc;
+  padding: 0px 0 0 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 140px;
+}
+
+.MainNav .filterContainer p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.MainNav .filterContainer .filter {
+  color: #48ace2;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=MainScreen.css.map */

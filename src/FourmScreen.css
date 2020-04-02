@@ -1,0 +1,95 @@
+.screen {
+  border-radius: 8px;
+  width: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #FAFAFA;
+  padding: 40px 15px;
+}
+
+.screen .mainContainer {
+  border-radius: 5px;
+  width: 650px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.screen .mainContainer .titleContainer {
+  position: relative;
+  left: 20px;
+  margin-bottom: 20px;
+}
+
+.screen .mainContainer .titleContainer .forumsTitle {
+  color: #9b9b9b;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.screen .mainContainer .titleContainer .selector {
+  border: '1px solod #ccc';
+  width: 60px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #7f7f7f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.screen .mainContainer .forumsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.screen .mainContainer .forumsList .fourmItem {
+  width: 550px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+
+.screen .mainContainer .forumsList .fourmItem .name {
+  font-size: 15px;
+  margin: 0 15px;
+  color: #000;
+}
+
+.screen .mainContainer .forumsList .fourmItem .register {
+  background-color: #449ecc;
+  width: 38px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #fff;
+  position: absolute;
+  right: 50px;
+  text-align: center;
+}
+/*# sourceMappingURL=FourmScreen.css.map */
