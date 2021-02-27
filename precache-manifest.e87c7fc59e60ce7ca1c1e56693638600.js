@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "048d34a8687f6603c560a18f85b0e6af",
+    "revision": "ebe6d9bd9a98359dda55bf5e23286158",
     "url": "/dcard_hui/index.html"
   },
   {
-    "revision": "74d1a1cc976c04abb3ae",
-    "url": "/dcard_hui/static/css/main.596f29ea.chunk.css"
+    "revision": "856c5e857100b3b91f3a",
+    "url": "/dcard_hui/static/css/main.df71f2d2.chunk.css"
   },
   {
-    "revision": "4b67578935d5e1602b76",
-    "url": "/dcard_hui/static/js/2.5b381b84.chunk.js"
+    "revision": "fca24bb862664a5d7aab",
+    "url": "/dcard_hui/static/js/2.85c74a30.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/dcard_hui/static/js/2.5b381b84.chunk.js.LICENSE.txt"
+    "url": "/dcard_hui/static/js/2.85c74a30.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "74d1a1cc976c04abb3ae",
-    "url": "/dcard_hui/static/js/main.5c2a72c9.chunk.js"
+    "revision": "856c5e857100b3b91f3a",
+    "url": "/dcard_hui/static/js/main.b5004361.chunk.js"
   },
   {
     "revision": "d989108db2a9262758fc",
