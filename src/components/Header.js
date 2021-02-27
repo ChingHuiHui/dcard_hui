@@ -1,11 +1,11 @@
 import React from 'react'
-import './Header.css'
+import '../styles/Header.css'
 import { Link } from 'react-router-dom'
+
 const Header = ()=>{
     return (
         <div style={styles.headerContainer}>
-            <div style={{display:'flex',width:'60%',alignItems:'center'}}>
-
+            <div style={{ display:'flex', width:'60%', alignItems:'center' }}>  
             <Link to='/'  style={{ textDecoration: 'none' }}>
                 <img alt='logo' src='https://sitcon.org/2019/static/img/sponsor/dcard.png' width='90px'/>
             </Link>
@@ -14,18 +14,17 @@ const Header = ()=>{
                     <button type='submit' title='搜尋' style={styles.submit}>
                         <i className='fas fa-search'/>
                     </button>
-            </form>
-            
+            </form>  
          </div>
          <div style={styles.loginContainer}>
-         <div style={styles.icon} className="fas fa-pen"></div>
-         <div style={styles.icon} className="fas fa-bell"></div>
-         <div style={styles.icon} className="fas fa-square"></div>
-              <div style={styles.icon} className="fas fa-envelope"></div>
-              <div style={styles.icon} className="fas fa-user"></div>
-             <div style={styles.icon} className="fas fa-sort-down"></div>
-            </div>
+            <div style={styles.icon} className="fas fa-pen"></div>
+            <div style={styles.icon} className="fas fa-bell"></div>
+            <div style={styles.icon} className="fas fa-square"></div>
+            <div style={styles.icon} className="fas fa-envelope"></div>
+            <div style={styles.icon} className="fas fa-user"></div>
+            <div style={styles.icon} className="fas fa-sort-down"></div>
         </div>
+    </div>
     )
 }
 

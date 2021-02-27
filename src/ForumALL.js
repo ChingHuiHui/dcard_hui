@@ -1,10 +1,9 @@
 import React, { useState } from 'react' 
 import { Link } from 'react-router-dom' 
-import './styles/MainScreen.css'
 import './styles/FourmScreen.css'
+import './styles/MainScreen.css'
 
-const DATA = [
-  {id:1,name:'感情' ,url:'https://megapx-stage-assets.dcard.io/images/bfe744d9-d95c-4737-8264-bc486e390cc9/full.jpeg',fourm:'relationship'},
+const DATA = [  
   {id:2,name:'武漢肺炎' ,url:'https://megapx-stage-assets.dcard.io/images/2f8b37b8-c437-4783-b95b-004f2f82479c/full.jpeg',fourm:'2019_ncov'},
   {id:3,name:'女孩' ,url:'https://megapx-stage-assets.dcard.io/images/6dd7b8fa-ec0f-4653-b2bc-a6f7db0d4739/full.jpeg',fourm:'girl'},
   {id:4,name:'有趣', url:'https://megapx-stage-assets.dcard.io/images/91fd89b7-6e27-4d7d-b5ce-1dec5f3650d2/full.jpeg',fourm:'funny'},
@@ -20,42 +19,39 @@ const DATA = [
   {id:14,name:'追星' ,url:'https://megapx-stage-assets.dcard.io/images/f19275b2-a1cb-4668-ab4e-93acedd45627/full.jpeg',fourm:'entertainer'},
   {id:15,name:'韓星' ,url:'https://megapx-stage-assets.dcard.io/images/9fb1e631-b6cf-4bbc-be70-b2039bc4f28c/full.jpeg',fourm:'korea_star'},
 ]
-function FourmsHot() {
-  const [fourmList, setfourmList] = useState(DATA)
+function FourmAll() {
+  const [ fourmList, setFourmList ] = useState(DATA)
 
-  return (
-      <div className='screen'>
-        <div className='mainContainer'>
-          <div className='titleContainer'>
-            <p className='forumsTitle'>即時熱門看板</p>
-          </div>
-          <div className='forumsList'>
-              {
-                fourmList.map((item)=>(
-                  <Link to={`/forum/${item.fourm}`}  style={{ textDecoration: 'none' }}>
-                    <div className='fourmItem'  >
-                      <p style={{paddingRight:20,color:item.id>3?'#000':'red'}}>{item.id}</p>
-                      <div style={{
-                        backgroundImage:`url(${item.url})`, 
-                        width: '50px',
-                        height: '50px',
-                        borderRadius: '50%',
-                        backgroundSize: 'cover'
-                      }}></div>
-                      <p className='name' >{item.name}</p>
-                      <div className='register'>訂閱</div>
-                    </div>
-                  </Link>
-                ))
-              }
-          </div>
+  return(
+    <div className='screen'>
+      <div className='mainContainer'>
+        <div className='titleContainer'>
+          <p className='forumsTitle'>全部看板</p>
+          <div className='selector'>看板<span className='fas  fa-sort-down'></span></div>
         </div>
+        <div className='forumsList'>
+          {
+            fourmList.map((item)=>(            
+              <Link to={`/forum/${item.fourm}`}  style={{ textDecoration: 'none' }}>
+              <div className='fourmItem'  >
+                <div style={{
+                  backgroundImage:`url(${item.url})`, 
+                  width: '50px',
+                  height: '50px',
+                  borderRadius: '50%',
+                  backgroundSize: 'cover'
+                }}></div>
+                <p className='name' >{item.name}</p>
+                <div className='register'>訂閱</div> 
+              </div>
+            </Link>
+          ))}
+         </div>
       </div>
-  
+    </div>
   )
 }
-    
-export default FourmsHot
 
 
-
+       
+export default FourmAll

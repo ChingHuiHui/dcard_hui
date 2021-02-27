@@ -1,22 +1,18 @@
 import React from 'react';
 
-
 const Item = props=>{
-    var url = require(`../img/${props.link}`)
+    let url = require(`../img/${props.link}`)
   
-    console.log(props.link)
     return(
         <div  style={{
-
-        backgroundImage: `url(${url})`,  
-        backgroundSize: 'cover',
-        height: 200,
-        width: 200,
-        position: 'relative',
-        marginBottom: 5
-        }}>
-      
-    <p style={styles.text}>{props.text}</p>
+            backgroundImage: `url(${url})`,  
+            backgroundSize: 'cover',
+            height: 200,
+            width: 200,
+            position: 'relative',
+            marginBottom: 5
+            }}>
+            <p style={styles.text}>{props.text}</p>
         </div>
     )
 }

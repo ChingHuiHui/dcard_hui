@@ -1,6 +1,7 @@
 import React from 'react'
-import './Goods.css'
+import './styles/Goods.css'
 import GoodItem from './components/GoodItem'
+
 const Goods = props =>{
     const GoodsData = [
         {id:1,img:'https://assets.dcard.tw/dadas-remote-entities/5e783abf9253c02f70bd6c87.jpeg',smalltext:'1人嗨到天邊去',productName:'巴西lntt LADY GOOZ增強液 送按摩棒',price:[1380],tag:['免運','大人玩具']},

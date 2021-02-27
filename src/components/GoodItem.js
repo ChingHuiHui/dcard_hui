@@ -1,5 +1,5 @@
 import React from 'react'
-import './GoodItem.css'
+import '../styles/GoodItem.css'
 
 const GoodItem =props=>{
     return(
